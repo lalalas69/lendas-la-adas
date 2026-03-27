@@ -2,161 +2,151 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Inuyasha</title>
+    <title>Lendas Entrelaçadas</title>
 
     <style>
+        /* Fundo dinâmico */
         body {
-            background-color: #0d0d0d;
-            color: #eee;
+            margin: 0;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #8B0000;
-            padding: 30px;
-            text-align: left;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-
-        main {
-            padding: 20px;
-            margin-left: 20px;
-            width: 90%;
-            max-width: 900px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #e04545;
-        }
-
-        h3 {
-            color: #ff5f5f;
-        }
-
-        img {
-            width: 350px;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-
-        .imagem-principal {
-            width: 600px;
-        }
-
-        footer {
-            background-color: #1a1a1a;
+            color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 40px;
+            background: linear-gradient(270deg, #000428, #004e92);
+            background-size: 400% 400%;
+            animation: gradientAnimation 12s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            margin-top: 30px;
+            font-size: 3rem;
+            text-shadow: 0 0 10px black;
+        }
+
+        p {
+            margin-top: -10px;
+            opacity: 0.8;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .anime-box {
+            background: rgba(0,0,0,0.4);
+            padding: 20px;
+            border-radius: 15px;
+            width: 260px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.6);
+            transition: 0.3s;
+        }
+
+        .anime-box:hover {
+            transform: scale(1.05);
+            background: rgba(0,0,0,0.6);
+        }
+
+        /* Nome + imagem lado a lado */
+        .titulo-anime {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .titulo-anime img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            object-fit: cover;
+            box-shadow: 0 0 8px black;
+        }
+
+        .anime-box a {
+            color: #00d9ff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .anime-box a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Inuyasha</h1>
-</header>
+    <h1>✨ Lendas Entrelaçadas ✨</h1>
+    <p>Explore três grandes mundos de fantasia, magia e aventuras épicas.</p>
 
-<main>
+    <div class="container">
 
-    <!-- Imagem principal -->
-    <img class="imagem-principal" src="imagem principal, nicolas.jpeg" alt="Inuyasha">
+        <!-- JUJUTSU KAISEN -->
+        <div class="anime-box">
+            <div class="titulo-anime">
+                <img src="Jujutsu Kaisen.jpg" alt="Jujutsu Kaisen">
+                <h2>Jujutsu Kaisen</h2>
+            </div>
+            <a href="jujutsu giovana/">Ir para a página</a>
+        </div>
 
-    <!-- SOBRE O ANIME -->
-    <section>
-        <h2>Sobre o Anime</h2>
-        <p>
-            *Inuyasha* é um anime clássico criado por Rumiko Takahashi. A obra mistura fantasia, folclore japonês, batalhas emocionantes 
-            e relações profundas entre seus personagens. Parte da história se passa no Japão Feudal, um período onde demônios,
-            espíritos e artefatos místicos coexistiam com humanos.
-        </p>
-        <p>
-            O anime é marcado por aventuras cheias de emoção, evolução pessoal, crescimento dos laços afetivos e dilemas internos 
-            que constroem uma narrativa rica e encantadora. Também explora temas como coragem, destino, responsabilidade e a 
-            convivência entre mundos diferentes.
-        </p>
-    </section>
-
-    <!-- HISTÓRIA -->
-    <section>
-        <h2>História</h2>
-        <p>
-            A história começa quando Kagome Higurashi, uma garota que vive no Japão moderno, é misteriosamente transportada 
-            para o Período Feudal. Lá ela encontra Inuyasha, um meio-demônio inicialmente hostil, mas extremamente poderoso.
-        </p>
-        <p>
-            Após a Joia de Quatro Almas ser quebrada, os dois embarcam em uma jornada para recuperar seus fragmentos.
-            No caminho, encontram aliados e inimigos com motivações complexas, e cada encontro molda o destino do mundo.
-        </p>
-        <p>
-            A busca pelos fragmentos se torna mais do que uma missão — é uma trajetória de amadurecimento, conexão e descoberta.
-        </p>
-    </section>
-
-    <!-- PERSONAGENS EM UMA COLUNA (ESTILO NANATSU) -->
-    <section>
-        <h2>Personagens Principais</h2>
+        <!-- THE SEVEN DEADLY SINS -->
+        <div class="anime-box">
+            <div class="titulo-anime">
+                <img src="sete pecados capitais.jpg" alt="The Seven Deadly Sins">
+                <h2>The Seven Deadly Sins</h2>
+            </div>
+            <a href="trabalho de anime/">Ir para a página</a>
+        </div>
 
         <!-- INUYASHA -->
-        <img src="inuyasha.jpeg" alt="Inuyasha">
-        <h3>Inuyasha</h3>
-        <p>
-            Inuyasha é um meio-demônio que vive dividido entre dois mundos. Impulsivo e direto, ele busca provar sua força 
-            enquanto descobre seu valor além da linhagem demoníaca. É dono da Tessaiga, uma espada lendária capaz de técnicas 
-            devastadoras. Apesar de sua postura rígida, possui um lado protetor e sensível, principalmente com aqueles que ama.
-        </p>
+        <div class="anime-box">
+            <div class="titulo-anime">
+                <img src="inuyasha.jpg" alt="Inuyasha">
+                <h2>Inuyasha</h2>
+            </div>
+            <a href="trabalho nicolas/">Ir para a página</a>
+        </div>
+<section style="max-width: 850px; margin: 40px auto; text-align: center; line-height: 1.7; background: rgba(255,255,255,0.07); padding: 25px 30px; border-radius: 12px; box-shadow: 0 0 12px rgba(0,0,0,0.3);">
+    <h2 style="margin-bottom: 10px;">🌟 Sobre o Projeto</h2>
+    <p>
+        <strong>Lendas Entrelaçadas</strong> é uma jornada que reúne três mundos épicos, cada um marcado por batalhas intensas, personagens marcantes e histórias que atravessam gerações. 
+        Esta página foi criada para apresentar brevemente esses universos e convidar você a explorá-los individualmente.
+    </p>
 
-        <!-- KAGOME -->
-        <img src="kagome.jpeg" alt="Kagome Higurashi">
-        <h3>Kagome Higurashi</h3>
-        <p>
-            Kagome (melhor personagem do anime) é uma garota moderna com fortes poderes espirituais. Sua bondade, coragem e determinação fazem dela
-            o coração emocional do grupo. Além de purificar fragmentos da joia, ela equilibra razão e emoção, crescendo
-            ao longo da jornada enquanto aprende mais sobre si e o passado ao qual foi ligada. 
-        </p>
+    <h3 style="margin-top: 25px;">📌 Os Três Mundos</h3>
 
-        <!-- SESSHOMARU -->
-        <img src="sesshomaru.jpeg" alt="Sesshomaru">
-        <h3>Sesshomaru</h3>
-        <p>
-            Sesshomaru é um demônio completo, elegante e extremamente poderoso. Inicialmente distante e indiferente aos humanos, 
-            ele possui uma jornada marcada por questionamentos sobre honra, propósito e sentimento. Sua presença é marcada por 
-            força absoluta, sabedoria e um desenvolvimento silencioso, porém profundo.
-        </p>
+    <p>
+        <strong>✨ Jujutsu Kaisen:</strong> Um mundo moderno assombrado por Maldições e energizado por feiticeiros capazes de manipular energia amaldiçoada. 
+        Uma história marcada por ação frenética, questionamentos profundos e personagens inesquecíveis.
+    </p>
 
-        <!-- MIROKU -->
-        <img src="miroku.jpeg" alt="Miroku">
-        <h3>Miroku</h3>
-        <p>
-            Miroku é um monge habilidoso com técnicas espirituais avançadas. Perspicaz, sábio e observador, ele serve como equilíbrio 
-            estratégico no grupo. Seu passado carrega responsabilidades importantes e desafios que moldam sua determinação.
-        </p>
+    <p>
+        <strong>⚔️ The Seven Deadly Sins:</strong> Uma aventura medieval repleta de cavaleiros lendários, criaturas mágicas e batalhas épicas. 
+        Liderados por Meliodas, os Pecados Capitais mostram que até os heróis mais poderosos carregam segredos.
+    </p>
 
-        <!-- SANGO -->
-        <img src="sango.jpeg" alt="Sango">
-        <h3>Sango</h3>
-        <p>
-            Sango é uma caçadora de demônios extremamente treinada e dona do poderoso Hiraikotsu. Corajosa, leal e emocionalmente forte, 
-            ela luta para proteger aqueles que ama enquanto enfrenta conflitos pessoais intensos. Sua força é tanto física quanto emocional.
-        </p>
+    <p>
+        <strong>🐾 Inuyasha:</strong> Uma jornada entre o mundo moderno e o Japão feudal, onde humanos e yokais convivem em um cenário cheio de magia, emoção e laços que desafiam o tempo.
+    </p>
 
-    </section>
-</main>
-
-<footer>
-    <p>Site feito por Nicolas</p>
-</footer>
+    <h3 style="margin-top: 25px;">🚀 Explore Mais!</h3>
+    <p>
+        Clique nos cards abaixo para mergulhar em cada universo, descobrir histórias, personagens e momentos marcantes que fizeram desses animes verdadeiras lendas.
+    </p>
+</section>
+``
+    </div>
 
 </body>
 </html>
